@@ -16,7 +16,7 @@
 @synthesize timerLabel;
 @synthesize progressBar;
 @synthesize numberSets;
-
+@synthesize percent;
 
 
 
@@ -27,6 +27,9 @@
      */
     //[self startTimer];
     progressBar.progress -=step;
+    int a = (int)(progressBar.progress*100);
+    percent.text = [NSString stringWithFormat:@"%i%%", a];
+   
     if (progressBar.progress ==0)
     {
     [theTimer2 invalidate];

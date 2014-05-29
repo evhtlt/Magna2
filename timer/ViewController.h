@@ -32,7 +32,7 @@
 
 
 @property (strong, nonatomic) IBOutlet UIProgressView *progressBar;
-
+@property (strong, nonatomic) IBOutlet UILabel *percent;
 
 
 @end
